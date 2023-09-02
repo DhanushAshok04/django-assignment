@@ -4,9 +4,11 @@ pipeline {
   triggers {
     githubPush()
   }
+
   stages {
     stage('Checkout') {
-      steps{
+      steps {
+
       checkout scm
       }
     }
